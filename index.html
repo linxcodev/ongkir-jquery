@@ -13,66 +13,55 @@
       <div class="row mt-5">
         <div class="col-md-6">
           <label>Pilih Provinsi Asal</label>
-          <select class="form-control" id="provinsi_asal">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select class="form-control provinsi" id="provinsi_asal">
+            <option>-- Pilih Provinsi Asal--</option>
           </select>
         </div>
         <div class="col-md-6">
           <label>Pilih Kota Asal</label>
-          <select class="form-control" id="kota_asal">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
+          <select class="form-control kota" id="kota_asal"></select>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col-md-6">
           <label>Pilih Provinsi Tujuan</label>
-          <select class="form-control" id="provinsi_tujuan">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select class="form-control provinsi" id="provinsi_tujuan">
+            <option>-- Pilih Provinsi Tujuan --</option>
           </select>
         </div>
         <div class="col-md-6">
           <label>Pilih Kota Tujuan</label>
-          <select class="form-control" id="kota_tujuan">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
+          <select class="form-control kota" id="kota_tujuan"></select>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 mt-3">
+      <div class="row mt-3">
+        <div class="col-md-6">
           <label>Kurir</label>
           <select class="form-control" id="kurir">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="jne">JNE</option>
+            <option value="tiki">TIKI</option>
+            <option value="pos">POS INDONESIA</option>
           </select>
+        </div>
+        <div class="col-md-6">
+          <label>Berat</label>
+          <input class="form-control" id="berat" type="text" placeholder="Berat dalam Gram">
         </div>
       </div>
 
       <div class="text-center">
-        <button type="button" class="btn btn-primary mt-3">Cek Ongkir</button>
+        <button type="button" id="cek_ongkir" class="btn btn-primary mt-5">Cek Ongkir</button>
+      </div>
+
+      <div class="container">
+        <div class="mt-5" id="hasil">
+
+        </div>
       </div>
     </div>
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/rajapi.js"></script>
   </body>
 </html>

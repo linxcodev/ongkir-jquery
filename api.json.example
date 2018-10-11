@@ -1,0 +1,5 @@
+{
+  "base_url" : "http://api.rajaongkir.com/",
+  "type_akun" : "starter, basic, pro",
+  "api_key" : "your-api-key"
+}
